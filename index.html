@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cake Order</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🎂 Sweet Cake Shop</h1>
+
+<div class="container">    
+    <div class="menu">
+        <h2>Our Cakes</h2>
+
+        <div class="cake" data-price="500">
+            <h3>Chocolate Cake</h3>
+            <p>Price: ₹500</p>
+        </div>
+
+        <div class="cake" data-price="600">
+            <h3>Black Forest</h3>
+            <p>Price: ₹600</p>
+        </div>
+
+        <div class="cake" data-price="700">
+            <h3>Red Velvet</h3>
+            <p>Price: ₹700</p>
+        </div>
+    </div>
+
+    
+    <div class="order">
+        <h2>Place Your Order</h2>
+
+        <form id="orderForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+
+            <select id="cakeSelect" required>
+                <option value="">Select Cake</option>
+                <option value="500">Chocolate Cake - ₹500</option>
+                <option value="600">Black Forest - ₹600</option>
+                <option value="700">Red Velvet - ₹700</option>
+            </select>
+
+            <input type="number" id="quantity" placeholder="Quantity" min="1" required>
+
+            <p>Total Price: ₹ <span id="total">0</span></p>
+
+            <button type="submit">Order Now</button>
+            <p id="message"></p>
+        </form>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #fff3f3;
+    text-align: center;
+}
+
+h1 {
+    background: #ff4d6d;
+    color: white;
+    padding: 15px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.menu, .order {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.cake {
+    background: #ffe0e6;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+input, select {
+    width: 90%;
+    padding: 8px;
+    margin: 8px 0;
+}
+
+button {
+    padding: 10px 20px;
+    background: #ff4d6d;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e63950;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
